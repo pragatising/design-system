@@ -1,0 +1,54 @@
+# Design System Project Rules
+
+## Project Context
+This is a learning project to build a sophisticated design system inspired by GitHub's Primer.
+Duration: 28 weeks across 12 phases.
+Current Phase: Phase 1 Complete ✅ | Phase 2 Next ⏳
+
+## Tech Stack
+- TypeScript (strict mode)
+- React 18+ (with hooks)
+- Styled Components + CSS Variables
+- Vite (build tool)
+- pnpm (package manager)
+- Vitest + React Testing Library (testing)
+- Storybook (documentation)
+
+## Code Style
+- Use TypeScript for all code
+- Prefer functional components with hooks
+- Use forwardRef for components that need ref access
+- Export components with displayName set
+- Write comprehensive JSDoc comments
+- Use semantic HTML
+- Follow accessibility best practices (WCAG 2.1 AA)
+
+## Component Guidelines
+- All components must be accessible
+- Include ARIA attributes where needed
+- Support keyboard navigation
+- Test with screen readers
+- Provide TypeScript types for all props
+- Write Storybook stories for each component
+- Write unit tests (80%+ coverage goal)
+
+## File Naming
+- Components: PascalCase (e.g., Button.tsx)
+- Utilities: camelCase (e.g., styleProps.ts)
+- Tests: *.test.tsx
+- Stories: *.stories.tsx
+- Types: *.types.ts
+
+## Documentation
+- Update PROGRESS.md when completing tasks
+- Document learnings and reflections
+- Write clear commit messages
+- Keep README updated
+
+## Quality Standards
+- 80%+ test coverage
+- Zero critical accessibility issues
+- Lighthouse score 95+
+- Bundle size < 200KB
+- All TypeScript strict checks passing
+

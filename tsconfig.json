@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": false,
+    "paths": {
+      "@design-system/tokens": ["./packages/tokens/src"],
+      "@design-system/primitives": ["./packages/primitives/src"],
+      "@design-system/components": ["./packages/components/src"],
+      "@design-system/css": ["./packages/css/src"],
+      "@design-system/icons": ["./packages/icons/src"],
+      "@design-system/themes": ["./packages/themes/src"]
+    }
+  },
+  "include": ["packages/*/src/**/*.ts", "packages/*/src/**/*.tsx", "scripts/**/*.ts"],
+  "exclude": ["node_modules", "dist", "build", "**/*.test.ts", "**/*.test.tsx"]
+}

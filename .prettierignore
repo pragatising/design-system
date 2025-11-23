@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+**/node_modules
+
+# Build outputs
+dist
+build
+coverage
+storybook-static
+.storybook/build
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated files
+*.d.ts.map
+

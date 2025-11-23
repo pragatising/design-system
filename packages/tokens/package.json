@@ -1,0 +1,39 @@
+{
+  "name": "@design-system/tokens",
+  "version": "0.0.1",
+  "description": "Design tokens for the design system",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./tokens.css": "./dist/tokens.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "npm run build:tokens && vite build",
+    "build:tokens": "tsx src/scripts/build.ts",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "design-tokens",
+    "design-system",
+    "tokens"
+  ],
+  "author": "Pragati",
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  }
+}
